@@ -46,8 +46,6 @@ transfer_case_functional_safety/
 └── docs/
 ```
 
-## CV wording
-
-**Functional-Safety-Konzept für eine elektronische Verteilergetriebesteuerung – Eigenprojekt**
+## **Functional-Safety-Konzept für eine elektronische Verteilergetriebesteuerung – Eigenprojekt**
 
 Entwicklung einer ISO-26262-orientierten Sicherheitsarchitektur mit HARA, FMEA, Safety Goals sowie funktionalen und technischen Sicherheitsanforderungen. Implementierung einer Python-basierten Steuergerät-Simulation mit redundanter Sensorsignalüberwachung, Fehlererkennung, Safe-State-Logik, Fault Injection und rückverfolgbaren Testfällen entlang des V-Modells.
