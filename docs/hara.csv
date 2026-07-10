@@ -1,0 +1,4 @@
+Hazard_ID,Situation,Malfunction,Hazardous_Event,S,E,C,Illustrative_ASIL,Safety_Goal
+HE-01,High-speed driving,Unintended engagement,Unexpected torque distribution may reduce stability,S3,E4,C2,ASIL C,SG-01
+HE-02,Normal driving,Incorrect speed accepted,Incorrect torque-distribution decision,S2,E4,C2,ASIL B,SG-02
+HE-03,Low-friction road,Communication lost,Transfer-case control becomes unavailable,S3,E3,C2,ASIL C,SG-03

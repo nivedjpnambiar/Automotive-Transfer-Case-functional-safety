@@ -1,0 +1,10 @@
+Test_ID,Requirement_ID,Description,Expected_Result,Automated_Test
+TC-01,SG-01,Healthy AUTO operation,"NORMAL, 40%",test_tc_01_healthy
+TC-02,TSR-01,Sensor disagreement,DEGRADED,test_tc_02_disagreement
+TC-03,TSR-03,Frozen sensor,DEGRADED,test_tc_03_timeout
+TC-04,TSR-02,Out-of-range speed,DEGRADED,test_tc_04_range
+TC-05,TSR-05,Missing heartbeat,SAFE,test_tc_05_can_timeout
+TC-06,FSR-04,Corrupt mode,DEGRADED,test_tc_06_invalid_mode
+TC-07,TSR-04,Actuator mismatch,SAFE,test_tc_07_actuator_mismatch
+TC-08,SG-03,Restore after critical fault,SAFE remains latched,test_tc_08_safe_latched
+TC-09,SG-03,Reset controller,NORMAL,test_tc_09_reset

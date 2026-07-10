@@ -1,0 +1,15 @@
+ID,Type,Requirement,ASIL,Parent,Verification_Method,Status
+SG-01,Safety Goal,Prevent unintended actuator engagement.,ASIL C,HE-01,Safety validation,Implemented
+SG-02,Safety Goal,Detect implausible or missing speed information.,ASIL B,HE-02,Safety validation,Implemented
+SG-03,Safety Goal,Enter safe state after critical faults.,ASIL C,HE-03,Safety validation,Implemented
+FSR-01,Functional Safety Requirement,Detect redundant speed-sensor disagreement.,ASIL B,SG-02,System test,Implemented
+FSR-02,Functional Safety Requirement,Detect speed values outside valid range.,ASIL B,SG-02,System test,Implemented
+FSR-03,Functional Safety Requirement,Detect stale speed signals.,ASIL B,SG-02,System test,Implemented
+FSR-04,Functional Safety Requirement,Reject unsupported operating modes.,QM,SG-01,System test,Implemented
+FSR-05,Functional Safety Requirement,Monitor command against actuator feedback.,ASIL C,SG-01,Integration test,Implemented
+FSR-06,Functional Safety Requirement,Detect missing CAN-like heartbeat.,ASIL C,SG-03,Integration test,Implemented
+TSR-01,Technical Safety Requirement,Disagreement above 150 rpm shall cause DEGRADED.,ASIL B,FSR-01,Unit test,Implemented
+TSR-02,Technical Safety Requirement,Speed outside 0–8000 rpm shall cause DEGRADED.,ASIL B,FSR-02,Unit test,Implemented
+TSR-03,Technical Safety Requirement,Speed signal older than 250 ms shall time out.,ASIL B,FSR-03,Unit test,Implemented
+TSR-04,Technical Safety Requirement,Three actuator mismatches shall cause latched SAFE.,ASIL C,FSR-05,Unit test,Implemented
+TSR-05,Technical Safety Requirement,Heartbeat older than 500 ms shall cause latched SAFE.,ASIL C,FSR-06,Unit test,Implemented

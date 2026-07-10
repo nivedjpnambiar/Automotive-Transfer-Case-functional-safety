@@ -1,0 +1,7 @@
+Item,Failure_Mode,Effect,Detection,Safety_Mechanism,State
+Speed Sensor A,Stuck,Incorrect speed estimate,Timestamp timeout,Timeout monitor,DEGRADED
+Speed Sensor B,Out of range,Invalid RPM,Range check,Input validation,DEGRADED
+Sensors,Disagreement,Uncertain state,Plausibility comparison,Threshold monitor,DEGRADED
+CAN heartbeat,Missing,Loss of communication,Heartbeat timeout,Safe-state transition,SAFE
+Actuator,Feedback mismatch,Unintended position,Command-feedback comparison,Persistence monitor,SAFE
+Mode request,Corrupted,Incorrect command interpretation,Enumeration validation,Reject command,DEGRADED
